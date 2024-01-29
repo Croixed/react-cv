@@ -4,13 +4,17 @@ import InputForm from './components/InputForm.jsx'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cvInfo, setCvInfo] = useState({personal: {}, schooling: [], experience: []})
+
+  const handleInfoSubmit = (name, number, email) => {
+    setCvInfo({...cvInfo, personal: {name: name, number: number, email: email} });
+  };
 
   return (
     <>
       <h1>CV Builder</h1>
       <div className="main-view">
-        <InputForm />
+        <InputForm handler={handleInfoSubmit} />
         <CV />
       </div>
     </>
