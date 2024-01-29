@@ -14,7 +14,7 @@ export default function CV({ cvInfo }) {
         {cvInfo.schooling.map((school) => {
           return (
             <div className="education-card">
-              <p>{school.schoolName}</p>
+              <h3>{school.schoolName}</h3>
               <p>{school.fieldOfStudy}</p>
             </div>
           )
@@ -25,15 +25,13 @@ export default function CV({ cvInfo }) {
         {cvInfo.experience.map((job) => {
           return (
             <div className="work-card">
-              <p>{job.companyName}</p>
+              <h3>{job.companyName}</h3>
               <p>{job.position}</p>
               <p>{job.desc}</p>
               <p>{`${job.dateStarted} to ${job.dateEnded}`}</p>
             </div>
           )
         })}
-      
-
     </div>
   )
 }

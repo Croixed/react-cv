@@ -7,6 +7,11 @@ function App() {
   const [cvInfo, setCvInfo] = useState({personal: {}, schooling: [], experience: []})
 
   const handleInfoSubmit = (name, number, email) => {
+    
+    if (!name || !number || !email) {
+      window.alert("please fill out all fields")
+      return
+    }
     setCvInfo({...cvInfo, personal: {name: name, number: number, email: email} });
   };
 

@@ -65,10 +65,19 @@ textarea {
 }
 
 /* cv stuff */
-
 .cv-wrapper {
   background-color: black;
   width: 900px;
   border-radius: 4px;
   margin: 0px auto;
+}
+
+.education-card,
+.work-card {
+  margin: 18px;
+}
+
+p, 
+h3 {
+  margin: 0;
 }
