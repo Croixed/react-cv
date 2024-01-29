@@ -1,6 +1,6 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100vw;
+  /* margin: 0 auto; */
   padding: 2rem;
   text-align: center;
 }
@@ -37,6 +37,25 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 270px;
+  margin: 8px 0px;
+  padding: 0px 8px;
+}
+
+.input-form {
+  background-color: rgb(31, 31, 31);
+  border-radius: 7px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-view {
+  display: flex;
 }

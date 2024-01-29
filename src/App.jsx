@@ -9,9 +9,10 @@ function App() {
   return (
     <>
       <h1>CV Builder</h1>
-
-      <InputForm />
-      <CV />
+      <div className="main-view">
+        <InputForm />
+        <CV />
+      </div>
     </>
   )
 }
