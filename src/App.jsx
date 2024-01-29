@@ -23,7 +23,7 @@ function App() {
       <h1>CV Builder</h1>
       <div className="main-view">
         <InputForm infoHandler={handleInfoSubmit} workHandler={handleWorkSubmit} schoolHandler={handleSchoolSubmit} />
-        <CV />
+        <CV cvInfo={cvInfo} />
       </div>
     </>
   )

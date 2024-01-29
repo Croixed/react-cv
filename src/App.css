@@ -63,3 +63,12 @@ h2 {
 textarea {
   resize: none;
 }
+
+/* cv stuff */
+
+.cv-wrapper {
+  background-color: black;
+  width: 900px;
+  border-radius: 4px;
+  margin: 0px auto;
+}

@@ -13,7 +13,7 @@ export default function ExperienceInput({ handler }) {
       <h2>Work Experience</h2>
       <input type="text" name="companyName" id="companyName" placeholder="Company Name" value={work.companyName} onChange={handleChange} />
       <input type="text" name="position" id="position" placeholder="Position" value={work.position} onChange={handleChange} />
-      <textarea name="desc" id="desc" rows="5" placeholder="Description of Responsibilities" value={work.desc} onChange={handleChange}></textarea>
+      <textarea name="desc" id="desc" rows="6" placeholder="Description of Responsibilities" value={work.desc} onChange={handleChange}></textarea>
       <div className="date-wrapper">
         <label htmlFor="dateStarted">Start Date:</label>
         <input type="date" name="dateStarted" id="dateStarted" value={work.dateStarted} onChange={handleChange} />
