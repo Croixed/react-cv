@@ -10,11 +10,19 @@ function App() {
     setCvInfo({...cvInfo, personal: {name: name, number: number, email: email} });
   };
 
+  const handleWorkSubmit = (workObj) => {
+    setCvInfo({...cvInfo, experience: [...cvInfo.experience, workObj]})
+  }
+
+  const handleSchoolSubmit = (schoolObj) => {
+    setCvInfo({...cvInfo, schooling: [...cvInfo.schooling, schoolObj]})
+  }
+
   return (
     <>
       <h1>CV Builder</h1>
       <div className="main-view">
-        <InputForm handler={handleInfoSubmit} />
+        <InputForm infoHandler={handleInfoSubmit} workHandler={handleWorkSubmit} schoolHandler={handleSchoolSubmit} />
         <CV />
       </div>
     </>
